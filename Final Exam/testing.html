@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Showcase</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Showcase</h1>
+    </header>
+    <main>
+        <section class="movie-list">
+            <div class="movie-card" onclick="showDetails('movie1')">
+                <img src="Images/WickedPoster.jpg"
+                width = 200;
+                height = 300;
+                alt="Wicked">
+                <h3>Wicked</h3>
+            </div>
+            <div class="movie-card" onclick="showDetails('movie2')">
+                <img src="Images/TransformersOnePoster.jpeg"
+                width = 200;
+                height = 300;
+                alt="Transformers One">
+                <h3>Transformers One</h3>
+            </div>
+            <div class="movie-card" onclick="showDetails('movie3')">
+                <img src="Images/AlienPoster.jpg"
+                width = 200;
+                height = 300;
+                alt="Alien: Romulus">
+                <h3>Alien: Romulus</h3>
+            </div>
+        </section>
+        
+        <!-- Movie Details -->
+        <section id="movie1" class="movie-details">
+            <h2>Movie 1</h2>
+            <p><strong>Synopsis:</strong> The story explores the complex friendship between Elphaba (who becomes the Wicked Witch of the West) and Galinda (who becomes Glinda the Good).</p>
+            <p><strong>Where to watch:</strong> In theaters</p>
+            <button onclick="hideDetails()">Back</button>
+        </section>
+        <section id="movie2" class="movie-details">
+            <h2>Movie 2</h2>
+            <p><strong>Synopsis:</strong> The untold origin story of Optimus Prime and Megatron, better known as sworn enemies, but who once were friends bonded like brothers who changed the fate of Cybertron forever.</p>
+            <p><strong>Where to watch:</strong> Paramount+, Prime Video</p>
+            <button onclick="hideDetails()">Back</button>
+        </section>
+        <section id="movie3" class="movie-details">
+            <h2>Movie 3</h2>
+            <p><strong>Synopsis:</strong> While scavenging the deep ends of a derelict space station, a group of young space colonists come face to face with the most terrifying life form in the universe. </p>
+            <p><strong>Where to watch:</strong> Hulu, Prime Video</p>
+            <button onclick="hideDetails()">Back</button>
+        </section>
+    </main>
+</body>
+</html>
