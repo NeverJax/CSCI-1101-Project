@@ -1,60 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Showcase</title>
-    <link rel="stylesheet" href="CSS/style1.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Movies 101</title>
 </head>
+
 <body>
     <header>
-        <h1>Movie Showcase</h1>
+        <div class="logo">Movies 101</div>
+        <ul class="menu">
+            <li><a href="https://www.amctheatres.com/movie-theatres">Showtimes</a></li>        </ul>
     </header>
-    <main>
-        <section class="movie-list">
-            <div class="movie-card" onclick="showDetails('movie1')">
-                <img src="Images/WickedPoster.jpg"
-                width = 200;
-                height = 300;
-                alt="Wicked">
-                <h3>Wicked</h3>
+
+    <div class="slider">S
+        <div class="list">
+            <div class="item active">
+                <img src="images/wickedBack.jpg" alt="">
+                <div class="content">
+                    <p>Synopsis</p>
+                    <h2>Wicked</h2>
+                    <p> The story explores the complex friendship between Elphaba (who becomes the Wicked Witch of the
+                        West) and Galinda (who becomes Glinda the Good).</p>
+                </div>
             </div>
-            <div class="movie-card" onclick="showDetails('movie2')">
-                <img src="Images/TransformersOnePoster.jpeg"
-                width = 200;
-                height = 300;
-                alt="Transformers One">
-                <h3>Transformers One</h3>
+            <div class="item">
+                <img src="images/AlienBackground.jpg" alt="">
+                <div class="content">
+                    <p>Synopsis</p>
+                    <h2>Alien: Romulus</h2>
+                    <p> While scavenging the deep ends of a derelict space station, a group of young space colonists
+                        come face to face with the most terrifying life form in the universe.</p>
+                </div>
             </div>
-            <div class="movie-card" onclick="showDetails('movie3')">
-                <img src="Images/AlienPoster.jpg"
-                width = 200;
-                height = 300;
-                alt="Alien: Romulus">
-                <h3>Alien: Romulus</h3>
+            <div class="item">
+                <img src="images/transformersBack.jpeg" alt="">
+                <div class="content">
+                    <p>Synopsis</p>
+                    <h2>Transformers One</h2>
+                    <p>The untold origin story of Optimus Prime and Megatron, better known as sworn enemies, but who
+                        once were friends bonded like brothers who changed the fate of Cybertron forever.</p>
+                </div>
             </div>
-        </section>
-        
-        <!-- Movie Details -->
-        <section id="movie1" class="movie-details">
-            <h2>Movie 1</h2>
-            <p><strong>Synopsis:</strong> The story explores the complex friendship between Elphaba (who becomes the Wicked Witch of the West) and Galinda (who becomes Glinda the Good).</p>
-            <p><strong>Where to watch:</strong> In theaters</p>
-            <button onclick="hideDetails()">Back</button>
-        </section>
-        <section id="movie2" class="movie-details">
-            <h2>Movie 2</h2>
-            <p><strong>Synopsis:</strong> The untold origin story of Optimus Prime and Megatron, better known as sworn enemies, but who once were friends bonded like brothers who changed the fate of Cybertron forever.</p>
-            <p><strong>Where to watch:</strong> Paramount+, Prime Video</p>
-            <button onclick="hideDetails()">Back</button>
-        </section>
-        <section id="movie3" class="movie-details">
-            <h2>Movie 3</h2>
-            <p><strong>Synopsis:</strong> While scavenging the deep ends of a derelict space station, a group of young space colonists come face to face with the most terrifying life form in the universe. </p>
-            <p><strong>Where to watch:</strong> Hulu, Prime Video</p>
-            <button onclick="hideDetails()">Back</button>
-        </section>
-    </main>
-    <script src="JavaScript/Functions.js"></script>
+            <div class="item">
+                <img src="images/moanaBack.jpeg" alt="">
+                <div class="content">
+                    <p>Synopsis</p>
+                    <h2>Moana 2</h2>
+                    <p>Moana journeys to the far seas of Oceania after receiving an unexpected call from her wayfinding
+                        ancestors.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/gladiatorIIBack.jpg" alt="">
+                <div class="content">
+                    <p>Synopsis</p>
+                    <h2>Gladiator II</h2>
+                    <p>With rage in his heart and the future of the Empire at stake, Lucius must look to his past to
+                        find strength and honor to return the glory of Rome to its people.</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+        </div>
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="images/WickedPoster.jpg" alt="">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <img src="images/alienPoster2.jpg" alt="">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <img src="images/TransformersOnePoster.jpeg" alt="">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <img src="images/moanaPoster.jpg" alt="">
+                <div class="content"></div>
+            </div>
+            <div class="item">
+                <img src="images/gladiatorIIPoster.jpg" alt="">
+                <div class="content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
