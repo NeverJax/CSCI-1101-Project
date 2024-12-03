@@ -9,14 +9,21 @@
 </head>
 
 <body>
+     <!--Header class includes of Nav menu -->
     <header>
         <div class="logo">Movies 101</div>
         <ul class="menu">
-            <li><a href="https://www.amctheatres.com/movie-theatres">Showtimes</a></li>        </ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="https://www.amctheatres.com/movie-theatres">Showtimes</a></li>
+            <li><a href="#info">Info</a></li>
+        </ul>
     </header>
-
-    <div class="slider">S
+    <!-- class "slider" contains majority of website include movie backgrounds, buttons, thumbnails, etc.-->
+    <div class="slider">
+        <!-- Made class "list" in order to contain each movie excluding arrows and thumbnails-->
         <div class="list">
+            <!-- list consists of separate class "item" which allow for me to edit css or js of a specific movie-->
+            <!-- each item consists of Movie, Background Image,Title, and the movie's synopsis-->
             <div class="item active">
                 <img src="images/wickedBack.jpg" alt="">
                 <div class="content">
@@ -63,11 +70,14 @@
                 </div>
             </div>
         </div>
+        <!--class "arrows" controls the two buttons on right-hand of screen which take user to next or previous slide-->
         <div class="arrows">
             <button id="prev">&lt;</button>
             <button id="next">&gt;</button>
         </div>
+        <!-- class "thumbnails" control the mini-movie posters at the bottom of screen which the user is alternating between and can click-->
         <div class="thumbnail">
+            <!-- each thumbnail is divided into "items" in order to address each movie separately-->
             <div class="item active">
                 <img src="images/WickedPoster.jpg" alt="">
                 <div class="content"></div>
@@ -90,7 +100,7 @@
             </div>
         </div>
     </div>
-
+     <!--links html to javascript-->
     <script src="js/script.js"></script>
 </body>
 
